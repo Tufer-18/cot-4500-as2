@@ -86,13 +86,13 @@ print("\n")
 
 #Cubic spline----------------------------------------------------------------------------------------------------------
 
-h1, h2, h3 = ..., ..., ... # Enter the value of steps here.
+h1, h2, h3 = ..., ..., ... # Enter the 3 step values here. (The space between x values, such as in [3,4] and [10,9], 10 - 3 = 7).
 
 A = np.array([[1,0,0,0],[h1, 2*(h1 + h2), h2, 0],
               [0,h2,2*(h2+h3), h3],
               [0,0,0,1]], dtype = float)
 
-f1,f2,f3,f4 = ..., ..., ..., ... # Enter f(x) values here.
+f1,f2,f3,f4 = ..., ..., ..., ... # Enter 4 f(x) values here.
 
 b = np.array([0,0,
               (6/h2)*(f4-f3)-(6/h3),0],dtype = float)
